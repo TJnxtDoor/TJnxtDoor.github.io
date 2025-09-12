@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    padding: 1rem;
+    gap: 1rem; 
+}
+
+header, footer {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.sidebar {
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+/* Media query for desktop screens */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    main {
+        flex: 3; 
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+}
