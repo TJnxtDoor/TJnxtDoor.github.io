@@ -1,4 +1,4 @@
-etch("https://api.github.com/users/tjnxtdoor/repos")
+fetch("https://api.github.com/users/tjnxtdoor/repos")
   .then(res => res.json())
   .then(repos => {
     const list = document.createElement("ul");
