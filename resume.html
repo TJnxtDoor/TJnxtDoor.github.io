@@ -2,78 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title> Projects ive worked on</title>
-    <link rel="stylesheet" href="./CSS/Resume.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style link rell="stylesheet" href="./CSS/resume.css"></style>
+    <title>TJ Afzal - Software Engineer Resume</title>
 </head>
 <body>
-    <main class="container">
-        <section class="header">
-            <h1>TJ</h1>
-            <p class="contact">
-                Email: <a href="mailto:yourname@example.com">Afzal@gmail.com</a> 
-                <br>
-                Phone: (502) 345-0172 | US            
-            </p>
-        </section>
+    <div class="max-w-4xl mx-auto my-10 p-6 sm:p-10 shadow-2xl rounded-xl bg-white">
         
-        <section class="section-summary">
-            <h2>Summary</h2>
-            <p>
-                Results-driven Software Engineer with 6 years of experience in developing and maintaining high-quality applications 
+        <!-- Header / Contact Information -->
+        <header class="text-center pb-6 border-b border-gray-200">
+            <h1 class="text-5xl font-extrabold text-gray-900 tracking-tight mb-2">TJ Afzal</h1>
+            <p class="text-lg font-medium text-blue-600 mb-4">Software Engineer</p>
+            <div class="text-sm text-gray-600 space-y-1">
+                <p>Email: <a href="mailto:Afzal@gmail.com" class="text-blue-600 hover:text-blue-800 transition duration-150">Afzal@gmail.com</a></p>
+                <p>Phone: (502) 345-0172 | US</p>
+            </div>
+        </header>
+        
+        <!-- Summary Section -->
+        <section class="py-6">
+            <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">Summary</h2>
+            <div class="section-divider"></div>
+            <p class="text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
+                Results-driven Software Engineer with  experience in developing and maintaining high-quality applications 
                 using Java, C++, and Python. Proven track record in enhancing code efficiency and application performance through 
                 collaboration with cross-functional teams and implementation of best practices. Seeking to leverage expertise in scalable 
                 web interfaces and UX/UI design in a dynamic engineering role.
             </p>
         </section>
-        
-        <section class="section">
-            <h2>Work Experience</h2>
-            <div class="item">
-                <h3>Software Engineer - Uber</h3>
-                <p>Mar 2020 - Sep 2024</p>
-                <p>Remote</p>
-                <p>
-                    Developed and maintained high-quality applications using Java, C++, and Python. Collaborated with cross-functional teams to enhance code efficiency and application performance. Implemented best practices in software development.
-                    Developed a scalable web interface with improved UX/UI design, resulting in a 20% increase in user satisfaction.
-                </p>
+
+        <!-- Work Experience Section -->
+        <section class="pt-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Work Experience</h2>
+            <div class="section-divider"></div>
+
+            <!-- Uber -->
+            <div class="mb-6 p-4 border-l-4 border-blue-500 hover:bg-blue-50 transition duration-150 rounded-md">
+                <h3 class="text-xl font-semibold text-gray-900">Software Engineer - Uber</h3>
+                <p class="text-sm text-gray-500 mb-2">Mar 2020 - Sep 2024 | Remote</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700 pl-4">
+                    <li>Developed and maintained high-quality applications using Java, C++, and Python.</li>
+                    <li>Collaborated with cross-functional teams to enhance code efficiency and application performance by implementing best practices.</li>
+                    <li>Developed a scalable web interface with improved UX/UI design, 
+                    <li>optimizing performance using Scala methods.</li>
+                </ul>
             </div>
-            <div class="item">
-                <h3>Software Developer - Sears</h3>
-                <p>May 2015 - Mar 2017</p>
-                <p>Remote</p>
-                <p>
-                    Participated in code reviews to provide constructive feedback and improve overall code quality.
-                    Implemented efficient algorithms and data structures to optimize application performance and enhance user experience.
-                </p>
-            </div>
-        </section>
-        
-        <section class="section">
-            <h2>Education</h2>
-            <div class="item">
-                <h3>Diploma - Meridian High School</h3>
-                <p>2014</p>
-            </div>
-        </section>
-        
-        <section class="section">
-            <h2>Skills</h2>
-            <div class="skills">
-                <ul>
-                    <li>Back End Developer</li>
-                    <li>Agile</li>
-                    <li>Software Developer</li>
-                    <li>C#</li>
-                    <li>Full Stack Developer</li>
+
+            <!-- Sears -->
+            <div class="mb-6 p-4 border-l-4 border-blue-500 hover:bg-blue-50 transition duration-150 rounded-md">
+                <h3 class="text-xl font-semibold text-gray-900">Software Developer - Sears</h3>
+                <p class="text-sm text-gray-500 mb-2">May 2015 - Mar 2017 | Remote</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700 pl-4">
+                    <li>Participated in code reviews to provide constructive feedback and improve overall code quality.</li>
+                    <li>Implemented efficient algorithms and data structures to optimize application performance and enhance user experience.</li>
+                    <li>Collaborated with UX/UI designers to create user-friendly interfaces for web-based applications using HTML, CSS, and JavaScript.</li>
                 </ul>
             </div>
         </section>
-        <section class="section">
-            <a href="projects.html" class="projects-link">3 Favorite Projects</a>
+        
+        <!-- Education Section -->
+        <section class="pt-6 border-t border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Education</h2>
+            <div class="section-divider"></div>
+            <div class="text-center">
+                <h3 class="text-lg font-semibold text-gray-900">Diploma - Meridian High School</h3>
+                <p class="text-sm text-gray-600">Graduated: 2014</p>
+            </div>
         </section>
-    </main>
+        
+        <!-- Skills Section -->
+        <section class="pt-6 border-t border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Skills</h2>
+            <div class="section-divider"></div>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-md">Back End Developer</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-md">Agile (Scrum/Kanban)</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-md">Software Developer</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-md">C#</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-md">Full Stack Development</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-md">Java / C++ / Python</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-md">UX/UI Design Principles</span>
+            </div>
+        </section>
+
+        <!-- Projects Link -->
+        <section class="pt-8 text-center">
+            <a href="projects.html" class="inline-block px-8 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-xl hover:bg-blue-600 transition duration-300 transform hover:scale-105">
+                 My Projects
+            </a>
+        </section>
+        
+    </div>
 </body>
 </html>
