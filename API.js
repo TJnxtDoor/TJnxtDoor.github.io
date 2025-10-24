@@ -1,24 +1,13 @@
-const GITHUB_USERNAME = 'tjnxtdoor';
-const API_URL = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
+fetch("https://api.github.com/users/tjnxtdoor/repos")
+  .then(res => res.json())
+  .then(repos => {
+    const list = document.createElement("ul");
+    repos.forEach(repo => {
+      const li = document.createElement("li");
+      li.textContent = repo.name;
+      list.appendChild(li);
+    });
+    document.body.appendChild(list);
+  })
+  .catch(err => console.error(err));
 
-fetch(API_URL)
-    .then(response => {
-        // Check for HTTP errors
-        if (!response.ok) {
-            throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
-        }
-        // Parse the response body as JSON
-        return response.json();
-    })
-    .then(data => {
-        // Use the repository data
-        console.log(`Successfully fetched ${data.length} repositories for ${GITHUB_USERNAME}:`);
-        console.log(data);
-    })
-    .catch(error => {
-        // Handle network errors or API errors
-        console.error("Failed to fetch repositories:", error);
-    });  
-
-
-    // this is a test 
