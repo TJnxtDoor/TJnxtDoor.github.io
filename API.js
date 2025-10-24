@@ -1,4 +1,4 @@
-fetch("https://api.github.com/users/tjnxtdoor/repos")
+etch("https://api.github.com/users/tjnxtdoor/repos")
   .then(res => res.json())
   .then(repos => {
     const list = document.createElement("ul");
@@ -10,4 +10,3 @@ fetch("https://api.github.com/users/tjnxtdoor/repos")
     document.body.appendChild(list);
   })
   .catch(err => console.error(err));
-
